@@ -1,0 +1,56 @@
+.technologies {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+
+    &__ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    &__li {
+        margin-right: 30px;
+        width: 270px;
+    }
+
+    &__li:last-child {
+        margin-right: 0;
+    }
+
+    &__div {
+        display: flex;
+        width: 270px;
+        height: 120px;
+        background-color: $technologies-background-color;
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__svg {
+        width: 70px;
+        height: 70px;
+        fill: $technologies-fill-color;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-family: inherit;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: $title;
+    }
+
+    &__paragraph {
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 0.03em;
+        color: $technologies__paragraph;
+    }
+}

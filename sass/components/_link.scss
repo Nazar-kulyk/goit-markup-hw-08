@@ -1,0 +1,27 @@
+.link {
+    position: relative;
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--color-nav-link);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+
+
+    &--current,
+    &:focus,
+    &:hover {
+        color: $link-hover-focus;
+    }
+}
