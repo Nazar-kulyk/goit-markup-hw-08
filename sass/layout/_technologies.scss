@@ -1,32 +1,3 @@
-
-.technologies {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.technologies__ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-}
-.technologies__li {
-  margin-right: 30px;
-  width: 270px;
-
-  &:last-child {
-  margin-right: 0;
-}
-}
-
-.technologies__div {
-  display: flex;
-  width: 270px;
-  height: 120px;
-  background-color: $technologies-background-color;
-  margin-bottom: 30px;
-  align-items: center;
-  justify-content: center;
-}
 .technologies__svg {
   width: 70px;
   height: 70px;
@@ -49,4 +20,82 @@
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: $paragraph;
+}
+
+@media screen and (max-width: 480px) {
+  .technologies {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .technologies__div {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background-color: $technologies-background-color;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .technologies__li {
+    margin-bottom: 30px;
+    width: 450px;
+  }
+}
+.technologies__title {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .technologies__ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+  }
+  .technologies__li {
+    margin-right: 30px;
+    width: 270px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .technologies__div {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: $technologies-background-color;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .technologies__svg {
+    width: 70px;
+    height: 70px;
+    fill: $technologies-fill-color;
+  }
+  .technologies__title {
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $title;
+  }
+  .technologies__paragraph {
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: $paragraph;
+  }
+  .technologies {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

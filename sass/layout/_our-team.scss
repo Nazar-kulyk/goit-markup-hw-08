@@ -1,7 +1,26 @@
+@media screen and (max-width: 480px) {
+.our-team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+}
+@media screen and (min-width: 768px) {
+  .our-team__ul {
+  display: flex;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+}
+@media screen and (min-width: 1200px) {
+
+}
 .our-team {
   padding-bottom: 94px;
-  background-color: $our-team-color;
   padding-top: 94px;
+  background-color: $our-team-color;
 }
 
 .our-team__title {
@@ -15,13 +34,7 @@
   text-align: center;
 }
 
-.our-team__ul {
-  display: flex;
-  padding-right: 0;
-  padding-left: 0;
-  margin: 0;
-  gap: 30px;
-}
+
 
 .our-team__li {
   background-color: $our-team-li-color;
