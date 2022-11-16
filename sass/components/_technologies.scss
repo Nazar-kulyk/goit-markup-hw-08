@@ -1,56 +1,55 @@
 .technologies {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
+.technologies__ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
 
-    &__ul {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-    }
+.technologies__li {
+  margin-right: 30px;
+  width: 270px;
 
-    &__li {
-        margin-right: 30px;
-        width: 270px;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
+}
 
-    &__li:last-child {
-        margin-right: 0;
-    }
+.technologies__div {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: $technologies-background-color;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+}
 
-    &__div {
-        display: flex;
-        width: 270px;
-        height: 120px;
-        background-color: $technologies-background-color;
-        margin-bottom: 30px;
-        align-items: center;
-        justify-content: center;
-    }
+.technologies__svg {
+  width: 70px;
+  height: 70px;
+  fill: $technologies-fill-color;
+}
 
-    &__svg {
-        width: 70px;
-        height: 70px;
-        fill: $technologies-fill-color;
-    }
+.technologies__title {
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-    &__title {
-        margin-bottom: 10px;
-        font-family: inherit;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+  color: $title;
+}
 
-        color: $title;
-    }
-
-    &__paragraph {
-        font-size: 14px;
-        line-height: 1.5;
-        letter-spacing: 0.03em;
-        color: $technologies__paragraph;
-    }
+.technologies__paragraph {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: $technologies__paragraph;
 }

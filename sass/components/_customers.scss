@@ -1,51 +1,50 @@
 .customers__div {
-    text-align: center;
-    font-size: 36px;
-    margin: 94px 0px;
-
+  text-align: center;
+  font-size: 36px;
+  margin: 94px 0px;
+}
 
 .customers__title {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .customers__ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-    padding: 0;
-    justify-content: space-between;
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .customers__li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-.customers__ul>.customers__li a {
-    display: inline-flex;
-    width: 170px;
-    height: 92px;
-    color: #2196f3;
-    border: solid 1px #afb1b8;
-    border-radius: 4px;
-    fill: #afb1b8;
-    justify-content: center;
-    align-items: center;
+.customers__link {
+  display: inline-flex;
+  width: 170px;
+  height: 92px;
+  color: #2196f3;
+  border: solid 1px #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  justify-content: center;
+  align-items: center;
 
-    transition-property: fill, border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 0;
-}
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 
-.customers__ul>.customers__li a:focus,
-.customers__ul>.customers__li a:hover {
+  &:focus,
+  &:hover {
     border-color: #2196f3;
     fill: #2196f3;
+  }
 }
 
 .customers__svg {
-    width: 106px;
-    height: 60px;
-}
+  width: 106px;
+  height: 60px;
 }
