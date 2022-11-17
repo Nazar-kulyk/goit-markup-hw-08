@@ -21,9 +21,8 @@
   }
 
   &:hover .products__overlay {
-  transform: translateY(0);
-}
-
+    transform: translateY(0);
+  }
 }
 
 .products__div {
@@ -41,10 +40,7 @@
   align-items: center;
   transform: translateY(101%);
   transition: transform 250ms ease;
-
 }
-
-
 
 .products__decor {
   width: 322px;

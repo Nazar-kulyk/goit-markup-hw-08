@@ -1,28 +1,8 @@
-@media screen and (max-width: 480px) {
- 
-  .footer-form__div {
-    width: 450px;
-    height: 156px;
-  }
+.footer-form__form {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
 }
-@media screen and (min-width: 768px) {
-}
-@media screen and (min-width: 1200px) {
-  .footer-form__div {
-    width: 570px;
-    height: 86px;
-  }
-  .footer-form__form {
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-  }
-  .footer-form__div {
-    width: 570px;
-    height: 86px;
-  }
-}
-
 .footer-form__form {
   display: flex;
   align-items: baseline;
@@ -88,4 +68,17 @@
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form__div {
+    width: 570px;
+    height: 86px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .foooter-form-div--mobail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
