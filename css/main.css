@@ -645,7 +645,7 @@ img {
 }
 
 .our-team-social__link {
-  display: inline-flex;
+  display: inline-block;
   padding: 12px 12px;
   color: #2196f3;
   border-radius: 50%;
@@ -797,6 +797,7 @@ img {
   height: 100%;
   top: 0;
   left: 0;
+  padding: 94px 15px 0px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition-property: opacity;
@@ -806,6 +807,7 @@ img {
 }
 
 .modal__div {
+  position: absolute;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -814,6 +816,7 @@ img {
 
 .modal__button {
   display: flex;
+  position: absolute;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
@@ -821,6 +824,9 @@ img {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  top: 0;
+  right: 0;
+  margin: 8px;
   cursor: pointer;
   transition-property: fill;
   transition-duration: 250ms;
@@ -838,35 +844,17 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-  .modal {
-    position: fixed;
-    padding: 94px 15px 0px 15px;
-  }
   .modal__div {
-    position: absolute;
-    width: 450px;
-  }
-  .modal__button {
-    position: absolute;
-    margin: 8px;
-    top: 0;
-    right: 0px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .modal__div {
-    position: absolute;
     top: 50%;
     left: 50%;
     width: 528px;
     min-height: 581px;
     transform: translate(-50%, -50%);
-  }
-  .modal__button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 8px;
   }
 }
 .form__paragraph {
