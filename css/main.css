@@ -845,7 +845,7 @@ img {
 @media screen and (max-width: 767px) {
   .modal {
     display: flex;
-    padding-top: 94px;
+    align-items: center;
     justify-content: center;
   }
   .modal__div {
