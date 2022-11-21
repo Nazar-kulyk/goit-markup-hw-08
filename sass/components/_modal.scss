@@ -15,7 +15,6 @@
 }
 
 .modal__div {
-  
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -24,11 +23,14 @@
 }
 
 .modal__button {
+  display: flex;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 
   top: 0;
   right: 0;
@@ -50,17 +52,22 @@
   width: 11px;
   height: 11px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .modal {
-    padding: 94px 15px 0px 15px;
+    display: flex;
+    padding: 0px 15px 0px 15px;
+    justify-content: center;
+    align-items: center;
   }
   .modal__div {
+    position: relative;
     max-width: 450px;
   }
   .modal__button {
+    position: absolute;
+    
     top: 0;
     right: o;
-    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) {
