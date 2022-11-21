@@ -48,14 +48,17 @@
   transition-delay: 0;
 
   &:hover {
-  fill: #2196f3;
+    fill: #2196f3;
+  }
 }
-}
-
-
 
 .modal__svg {
   display: flex;
   width: 11px;
   height: 11px;
+}
+@media screen and (max-width: 480px) {
+  .modal__div {
+    max-width: 450px;
+  }
 }

@@ -21,47 +21,64 @@
   <body>
     <header class="header">
       <div class="container header__div">
-        <nav class="header__navigation">
-          <a lang="en" class="logo" href="index.html">Web<span class="logo__st">Studio</span></a>
+        
+          <nav class="header__navigation">
+            <a lang="en" class="logo" href="index.html">Web<span class="logo__st">Studio</span></a>
 
-          <ul class="header__ul">
-            <li class="header__li">
-              <a class="link  link--current header__link" href="index.html">Студія</a>
-            </li>
-            
-            <li class="header__li">
-              <a class="link" href="portfolio.html">Портфолі</a>
-            </li>
-            
+            <ul class="header__ul">
               <li class="header__li">
-              <a class="link" href="#">Контакти</a>
+                <a class="link link--current header__link" href="index.html">Студія</a>
+              </li>
+
+              <li class="header__li">
+                <a class="link" href="portfolio.html">Портфолі</a>
+              </li>
+
+              <li class="header__li">
+                <a class="link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contact">
+            <li class="contact__li">
+              <a class="contact__link" href="mailto:info@devstudio.com">
+                <svg class="contact__svg--envelope">
+                  <use href="./images/icons.svg.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+
+            <li class="contact__li">
+              <a class="contact__link" href="tel:+380961111111">
+                <svg class="contact__svg--smartphone">
+                  <use href="./images/icons.svg.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
+        
 
-        <ul class="contact">
-          <li class="contact__li">
-            <a class="contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__svg--envelope">
-                <use href="./images/icons.svg.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
+        <button class="mobail" type="button" aria-expanded="false" aria-controls="mobail__menu--open" data-menu-button>
+          <svg width="40" height="40" class="mobail-menu__svg" aria-label="мобільне меню">
+            <use
+              class="mobail__icon-menu"
+              
+              href="./images/icons.svg.svg#icon-menu_40px"
+            ></use>
+            <use
+              class="mobail__close"
+              .
+              href="./images/icons.svg.svg#icon-close_40px"
+            ></use>
+          </svg>
+        </button>
 
-          <li class="contact__li">
-            <a class="contact__link" href="tel:+380961111111">
-              <svg class="contact__svg--smartphone">
-                <use href="./images/icons.svg.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-
-        <svg class="mobail-menu__svg">
-          <use href="./images/icons.svg.svg#icon-menu_40px"></use>
-        </svg>
+        <div class="mobail__menu--open" id="mobail__menu--open">
+          
+        </div>
 
       </div>
     </header>
@@ -77,7 +94,6 @@
       <section class="technologies">
         <div class="container">
           <ul class="technologies__ul">
-
             <li class="technologies__li">
               <div class="technologies__div">
                 <svg class="technologies__svg">
@@ -134,7 +150,6 @@
           <h2 class="whatwedo__title">Чим ми займаємося</h2>
 
           <ul class="whatwedo__ul">
-
             <li class="whatwedo__li">
               <div class="whatwedo__div">
                 <img src="./images/img01.jpg" alt="write on pc" width="370" height="294" />
@@ -167,20 +182,26 @@
 
       <section class="our-team">
         <div class="container">
-
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__ul">
-
             <li class="our-team__li">
               <div class="our-team__div">
-
-                <img src="./images/img001.jpg" alt="man with glasses" width="270" height="260" />
+                <img
+                  scrset="
+                ./images/our-team1 450.jpg 1x,
+                ./images/our-team1 900 @2x.jpg 2x,
+                ./images/our-team1 1350 @3x.jpg 3x
+                "
+                  src="./images/out-team1 450.jpg"
+                  alt="man with glasses"
+                />
                 <h3 class="our-team__title--card">Ігор Дем'яненко</h3>
                 <p class="our-team__paragraph">Product Designer</p>
 
                 <ul class="our-team-social">
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -192,7 +213,8 @@
                   </li>
 
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://twitter.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -203,7 +225,8 @@
                     </a>
                   </li>
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -214,7 +237,8 @@
                     </a>
                   </li>
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -230,15 +254,22 @@
 
             <li class="our-team__li">
               <div class="our-team__div">
-
-                <img src="./images/img002.jpg" alt="woman with glasses" width="270" height="260" />
+                <img
+                  scrset="
+                ./images/our-team2 450.jpg 1x,
+                ./images/our-team2 900 @2x.jpg 2x,
+                ./images/our-team2 1350 @3x.jpg 3x
+                "
+                  src="./images/out-team2 450.jpg"
+                  alt="woman with glasses"
+                />
                 <h3 class="our-team__title--card">Ольга Рєпіна</h3>
                 <p class="our-team__paragraph">Frontend Developer</p>
 
-                
                 <ul class="our-team-social">
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -250,7 +281,8 @@
                   </li>
 
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://twitter.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -261,7 +293,8 @@
                     </a>
                   </li>
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -272,7 +305,8 @@
                     </a>
                   </li>
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -288,14 +322,22 @@
 
             <li class="our-team__li">
               <div class="our-team__div">
-
-                <img src="./images/img003.jpg" alt="men" width="270" height="260" />
+                <img
+                  scrset="
+                ./images/our-team3 450.jpg 1x,
+                ./images/our-team3 900 @2x.jpg 2x,
+                ./images/our-team3 1350 @3x.jpg 3x
+                "
+                  src="./images/out-team3 450.jpg"
+                  alt="men"
+                />
                 <h3 class="our-team__title--card">Микола Тарасов</h3>
                 <p class="our-team__paragraph">Marketing</p>
 
                 <ul class="our-team-social">
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -307,7 +349,8 @@
                   </li>
 
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://twitter.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -318,7 +361,8 @@
                     </a>
                   </li>
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -329,7 +373,8 @@
                     </a>
                   </li>
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -345,19 +390,22 @@
 
             <li class="our-team__li">
               <div class="our-team__div">
-
                 <img
-                  src="./images/img004.jpg"
+                  scrset="
+                ./images/our-team4 450.jpg 1x,
+                ./images/our-team4 900 @2x.jpg 2x,
+                ./images/our-team4 1350 @3x.jpg 3x
+                "
+                  src="./images/out-team4 450.jpg"
                   alt="man with glasses in black t-shirt"
-                  width="270"
-                  height="260"
                 />
                 <h3 class="our-team__title--card">Михайло Єрмаков</h3>
                 <p class="our-team__paragraph">UI Designer</p>
-                
+
                 <ul class="our-team-social">
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -369,7 +417,8 @@
                   </li>
 
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://twitter.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -380,7 +429,8 @@
                     </a>
                   </li>
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://www.facebook.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -391,7 +441,8 @@
                     </a>
                   </li>
                   <li class="our-team-social__li">
-                    <a class="our-team-social__link"
+                    <a
+                      class="our-team-social__link"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
@@ -415,7 +466,12 @@
 
             <ul class="customers__ul">
               <li class="customers__li">
-                <a class="customers__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <a
+                  class="customers__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
                   <svg class="customers__svg">
                     <use href="./images/icons.svg.svg#company"></use>
                   </svg>
@@ -423,23 +479,38 @@
               </li>
 
               <li class="customers__li">
-                <a class="customers__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <a
+                  class="customers__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
                   <svg class="customers__svg">
                     <use href="./images/icons.svg.svg#company-1"></use>
                   </svg>
                 </a>
               </li>
-              
+
               <li class="customers__li">
-                <a class="customers__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <a
+                  class="customers__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
                   <svg class="customers__svg">
                     <use href="./images/icons.svg.svg#company-2"></use>
                   </svg>
                 </a>
               </li>
-              
+
               <li class="customers__li">
-                <a class="customers__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <a
+                  class="customers__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
                   <svg class="customers__svg">
                     <use href="./images/icons.svg.svg#company-3"></use>
                   </svg>
@@ -447,7 +518,12 @@
               </li>
 
               <li class="customers__li">
-                <a class="customers__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <a
+                  class="customers__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
                   <svg class="customers__svg">
                     <use href="./images/icons.svg.svg#company-4"></use>
                   </svg>
@@ -455,7 +531,12 @@
               </li>
 
               <li class="customers__li">
-                <a class="customers__link" href="#" target="_blank" rel="noopener noreferrer nofollow">
+                <a
+                  class="customers__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
                   <svg class="customers__svg">
                     <use href="./images/icons.svg.svg#company-5"></use>
                   </svg>
@@ -565,7 +646,12 @@
           <p class="join__paragraph">приєднуйтесь</p>
           <ul class="join__ul">
             <li class="join__li">
-              <a class="join__link" href="https://instagram.com/" target="_blank" rel="noopener noreferrer nofollow">
+              <a
+                class="join__link"
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 <svg class="join__svg">
                   <use href="./images/icons.svg.svg#instagram-2"></use>
                 </svg>
@@ -573,14 +659,20 @@
             </li>
 
             <li class="join__li">
-              <a class="join__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer nofollow">
+              <a
+                class="join__link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
                 <svg class="join__svg">
                   <use href="./images/icons.svg.svg#twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li class="join__li">
-              <a class="join__link"
+              <a
+                class="join__link"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -591,7 +683,8 @@
               </a>
             </li>
             <li class="join__li">
-              <a class="join__link"
+              <a
+                class="join__link"
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
@@ -625,5 +718,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
