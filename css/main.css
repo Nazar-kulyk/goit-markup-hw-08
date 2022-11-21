@@ -806,7 +806,6 @@ img {
 }
 
 .modal__div {
-  position: absolute;
   padding: 40px;
   background-color: #ffffff;
   border-radius: 4px;
@@ -814,15 +813,11 @@ img {
 }
 
 .modal__button {
-  display: flex;
-  position: absolute;
   width: 30px;
   height: 30px;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
   top: 0;
   right: 0;
   margin: 8px;
@@ -844,12 +839,15 @@ img {
 
 @media screen and (max-width: 767px) {
   .modal {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 94px 15px 0px 15px;
   }
   .modal__div {
     max-width: 450px;
+  }
+  .modal__button {
+    top: 0;
+    right: o;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -859,6 +857,15 @@ img {
     width: 528px;
     min-height: 581px;
     transform: translate(-50%, -50%);
+  }
+  .modal__button {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal__div {
+    position: absolute;
   }
 }
 .form__paragraph {
