@@ -6,15 +6,13 @@
   display: flex;
   align-items: center;
 }
-
+  
 @media screen and (max-width: 768px) {
+  
   .header__ul {
     display: none;
   }
-  .mobail-menu__svg {
-    width: 40px;
-    height: 40px;
-  }
+
   .header__div {
     display: flex;
     align-items: center;
@@ -29,9 +27,7 @@
     display: flex;
     align-items: center;
   }
-  .mobail-menu__svg {
-    display: none;
-  }
+
   .header__ul {
     display: flex;
     font-family: 'Roboto';

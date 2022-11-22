@@ -21,67 +21,88 @@
   <body>
     <header class="header">
       <div class="container header__div">
-        
-          <nav class="header__navigation">
-            <a lang="en" class="logo" href="index.html">Web<span class="logo__st">Studio</span></a>
+        <nav class="header__navigation">
+          <a lang="en" class="logo" href="index.html">Web<span class="logo__st">Studio</span></a>
 
-            <ul class="header__ul">
-              <li class="header__li">
-                <a class="link link--current header__link" href="index.html">Студія</a>
-              </li>
-
-              <li class="header__li">
-                <a class="link" href="portfolio.html">Портфолі</a>
-              </li>
-
-              <li class="header__li">
-                <a class="link" href="#">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-
-          <ul class="contact">
-            <li class="contact__li">
-              <a class="contact__link" href="mailto:info@devstudio.com">
-                <svg class="contact__svg--envelope">
-                  <use href="./images/icons.svg.svg#envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
+          <ul class="header__ul">
+            <li class="header__li">
+              <a class="link link--current header__link" href="index.html">Студія</a>
             </li>
 
-            <li class="contact__li">
-              <a class="contact__link" href="tel:+380961111111">
-                <svg class="contact__svg--smartphone">
-                  <use href="./images/icons.svg.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
+            <li class="header__li">
+              <a class="link" href="portfolio.html">Портфолі</a>
+            </li>
+
+            <li class="header__li">
+              <a class="link" href="#">Контакти</a>
             </li>
           </ul>
-        
+        </nav>
 
-        <button class="mobail" type="button" aria-expanded="false" aria-controls="mobail__menu--open" data-menu-button>
+        <ul class="contact">
+          <li class="contact__li">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__svg--envelope">
+                <use href="./images/icons.svg.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+
+          <li class="contact__li">
+            <a class="contact__link" href="tel:+380961111111">
+              <svg class="contact__svg--smartphone">
+                <use href="./images/icons.svg.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
+        <button
+          class="mobail"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobail__menu--open"
+          data-menu-button
+        >
           <svg width="40" height="40" class="mobail-menu__svg" aria-label="мобільне меню">
-            <use
-              class="mobail__icon-menu"
-              
-              href="./images/icons.svg.svg#icon-menu_40px"
-            ></use>
-            <use
-              class="mobail__close"
-              .
-              href="./images/icons.svg.svg#icon-close_40px"
-            ></use>
+            <use class="mobail__icon-menu" href="./images/icons.svg.svg#icon-menu_40px"></use>
+            <use class="mobail__close" . href="./images/icons.svg.svg#icon-close_40px"></use>
           </svg>
         </button>
-
-        <div class="mobail__menu--open" id="mobail__menu--open">
-          
-        </div>
-
       </div>
     </header>
+
+    <div class="mobail__menu--open" id="mobail__menu--open" data-menu>
+      <nav class="header__navigation--mobail">
+        <ul class="header__ul--mobail">
+          <li class="header__li">
+            <a class="link--mobail link--current header__link" href="index.html">Студія</a>
+          </li>
+
+          <li class="header__li">
+            <a class="link--mobail" href="portfolio.html">Портфолі</a>
+          </li>
+
+          <li class="header__li">
+            <a class="link--mobail" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="contact--mobail">
+        <li class="contact__li--mobail">
+          <a class="contact__link--mobail" href="tel:+380961111111"> +38 096 111 11 11</a>
+        </li>
+
+        <li class="contact__li--mobail">
+          <a class="contact__link__mobail--mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+    </div>
 
     <main>
       <section class="decision">
