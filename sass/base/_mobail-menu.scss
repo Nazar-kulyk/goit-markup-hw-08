@@ -5,19 +5,27 @@
     border: none;
     margin: 0;
     padding: 0;
+    z-index: 1111;
+
+    &.is-open .mobail__close {
+      display: block;
+    }
+    &.is-open .mobail__icon-menu {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      fill: $hover__focus;
+    }
   }
+
   .mobail__close {
     display: none;
   }
   .mobail-menu__svg {
     width: 40px;
     height: 40px;
-  }
-  .mobail.is-open .mobail__close {
-    display: block;
-  }
-  .mobail.is-open .mobail__icon-menu {
-    display: none;
   }
 
   /* mobail menu */
@@ -27,12 +35,13 @@
 
     position: absolute;
     width: 100%;
-    height: 100%;
-    padding: 40px;
+    padding: 48px 40px;
+    top: 0;
     left: 0;
     background-color: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
+
     &.is-open {
       display: block;
     }
@@ -56,7 +65,6 @@
     text-decoration: none;
     color: $color-nav-link;
 
-    padding-top: 32px;
     padding-bottom: 32px;
 
     transition-property: color;
@@ -74,6 +82,7 @@
     display: flex;
     flex-direction: column;
     list-style-type: none;
+    margin-bottom: 64px;
   }
   .contact__link--mobail {
     font-family: inherit;
@@ -131,7 +140,27 @@
       color: $contact-focus;
     }
   }
-  
+  .social__mobail--menu {
+    display: flex;
+    list-style-type: none;
+  }
+  .social__mobail--li {
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .social__mobail--link {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: cal(22/18);
+    text-decoration: none;
+    color: $social__mobail--link;
+    margin-right: 10px;
+  }
 }
 @media screen and (min-width: 768px) {
   .mobail {

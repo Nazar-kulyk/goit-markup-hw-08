@@ -28,7 +28,7 @@
   gap: 10px;
   padding: 0;
   justify-content: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .our-team-social__link {
@@ -85,24 +85,19 @@
 
 @media screen and (max-width: 768px) {
   .our-team {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    margin: 60px 0px;
   }
   .our-team__li {
     max-width: 450px;
-    margin: 0 auto;
+    margin: 0px auto 30px auto;
   }
   .our-team__div {
     max-width: 450px;
   }
-  .our-team-social__svg {
-    margin-bottom: 24px;
-  }
+
   .our-team__paragraph {
     padding-bottom: 16px;
   }
-
-  
 }
 @media screen and (min-width: 768px) {
   .our-team__ul {
