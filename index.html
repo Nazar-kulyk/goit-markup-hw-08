@@ -212,7 +212,17 @@
           <ul class="whatwedo__ul">
             <li class="whatwedo__li">
               <div class="whatwedo__div">
-                <img src="./images/img01.jpg" alt="write on pc" width="370" height="294" />
+                <img
+                  scrset="
+                  ./images/that1 370.jpg 1x,
+                  ./images/that1 740 @2x.jpg x2,
+                  ./images/that1 1110 @3x.jpg x3
+                "
+                  src="./images/that1 370.jpg"
+                  alt="write on pc"
+                  width="370"
+                  height="294"
+                />
                 <div class="whatwedo-decor">
                   <h6 class="whatwedo-decor__title">Десктопні додатки</h6>
                 </div>
@@ -221,7 +231,21 @@
 
             <li class="whatwedo__li">
               <div class="whatwedo__div">
-                <img src="./images/img02.jpg" alt="design mobile app" width="370" height="294" />
+                <img
+                  scrset="
+                  ./images/that2 370.jpg 1x,
+                  ./images/that2 740 @2x.jpg x2,
+                  ./images/that2 1110 @3x.jpg x3
+                "
+                  src="./images/that2 370.jpg"
+                  alt="write on pc"
+                  width="370"
+                  height="294"
+                  src="./images/img02.jpg"
+                  alt="design mobile app"
+                  width="370"
+                  height="294"
+                />
                 <div class="whatwedo-decor">
                   <h6 class="whatwedo-decor__title">Мобільні додатки</h6>
                 </div>
@@ -230,7 +254,21 @@
 
             <li class="whatwedo__li">
               <div class="whatwedo__div">
-                <img src="./images/img03.jpg" alt="choose the color" width="370" height="294" />
+                <img
+                  scrset="
+                  ./images/that3 370.jpg 1x,
+                  ./images/that3 740 @2x.jpg x2,
+                  ./images/that3 1110 @3x.jpg x3
+                "
+                  src="./images/that3 370.jpg"
+                  alt="write on pc"
+                  width="370"
+                  height="294"
+                  src="./images/img03.jpg"
+                  alt="choose the color"
+                  width="370"
+                  height="294"
+                />
                 <div class="whatwedo-decor">
                   <h6 class="whatwedo-decor__title">Дизайнерські рішення</h6>
                 </div>
@@ -672,89 +710,91 @@
 
     <footer class="footer">
       <div class="footer__div container">
-        <div>
-          <a lang="en" class="logo logo--ft logo__ft--mobail" href="index.html"
-            >Web<span class="logo__st--color">Studio</span></a
-          >
+        <div class="tablet">
+          <div class="tablet__div">
+            <a lang="en" class="logo logo--ft logo__ft--mobail" href="index.html"
+              >Web<span class="logo__st--color">Studio</span></a
+            >
 
-          <address class="footer__address">
-            <ul class="footer__ul">
-              <li class="footer__li">
+            <address class="footer__address">
+              <ul class="footer__ul">
+                <li class="footer__li">
+                  <a
+                    class="footer__kyiv footer__address--mobail"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+
+                <li class="footer__li footer__address--mobail">
+                  <a class="footer__li footer__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+
+                <li class="footer__li footer__address--mobail">
+                  <a class="footer__li footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="join">
+            <p class="join__paragraph">приєднуйтесь</p>
+            <ul class="join__ul">
+              <li class="join__li">
                 <a
-                  class="footer__kyiv footer__address--mobail"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  class="join__link"
+                  href="https://instagram.com/"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+                  rel="noopener noreferrer nofollow"
                 >
+                  <svg class="join__svg">
+                    <use href="./images/icons.svg.svg#instagram-2"></use>
+                  </svg>
+                </a>
               </li>
 
-              <li class="footer__li footer__address--mobail">
-                <a class="footer__li footer__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li class="join__li">
+                <a
+                  class="join__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
                 >
+                  <svg class="join__svg">
+                    <use href="./images/icons.svg.svg#twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-
-              <li class="footer__li footer__address--mobail">
-                <a class="footer__li footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="join__li">
+                <a
+                  class="join__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="join__svg">
+                    <use href="./images/icons.svg.svg#facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__li">
+                <a
+                  class="join__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="join__svg">
+                    <use href="./images/icons.svg.svg#linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="join">
-          <p class="join__paragraph">приєднуйтесь</p>
-          <ul class="join__ul">
-            <li class="join__li">
-              <a
-                class="join__link"
-                href="https://instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <svg class="join__svg">
-                  <use href="./images/icons.svg.svg#instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="join__li">
-              <a
-                class="join__link"
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <svg class="join__svg">
-                  <use href="./images/icons.svg.svg#twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__li">
-              <a
-                class="join__link"
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <svg class="join__svg">
-                  <use href="./images/icons.svg.svg#facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__li">
-              <a
-                class="join__link"
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <svg class="join__svg">
-                  <use href="./images/icons.svg.svg#linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="footer-form__div">

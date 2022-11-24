@@ -45,10 +45,17 @@
   width: 20px;
   height: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+ 
   .join {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .join {
+    text-align: center;
+    
   }
 }

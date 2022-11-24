@@ -1,13 +1,4 @@
 /* standart styles */
-/* 
-.decision {
-  padding: 200px 0px 200px 0px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/Img\ bck.jpg);
-  max-width: 1600px;
-  margin: auto;
-}
-
 .decision__title {
   font-family: inherit;
 
@@ -58,7 +49,7 @@
     border-radius: 4px;
   }
 }
- */
+
 
 
 
@@ -66,64 +57,9 @@
 
 
 
-/* .decision {
-  padding: 118px 0px 118px 0px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../images/Header\ 480.jpg);
-  max-width: 100%;
-  height: auto;
-}
 
-.decision__title {
-  font-family: inherit;
 
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: $decision-title-color;
-  margin: auto;
-  max-width: 696px;
-}
 
-.decision__button {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: $menu-link-studio-color;
-  background: $menu-link-background;
-  box-shadow: 0px 4px 4px $box-shadow;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  margin: auto;
-  margin-top: 30px;
-  padding: 10px 32px 10px 32px;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
-
-  &:hover {
-    background: $hover__focus__studio--color;
-    box-shadow: 0px 4px 4px $box-shadow;
-    border-radius: 4px;
-  }
-  &:focus {
-    background: $hover__focus__studio--color;
-    box-shadow: 0px 4px 4px $box-shadow;
-    border-radius: 4px;
-  }
-} */
 .decision__button {
   display: flex;
   align-items: center;
@@ -155,7 +91,7 @@
     border-radius: 4px;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .decision__title {
     font-family: inherit;
 
@@ -167,7 +103,7 @@
     text-transform: uppercase;
     color: $decision-title-color;
     margin: auto;
-    max-width: 696px;
+    max-width: 360px;
   }
   .decision__button {
     font-family: inherit;
@@ -182,8 +118,8 @@
     padding: 118px 0px 118px 0px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../images/Header\ 480.jpg);
-    max-width: 100%;
-    height: auto;
+    max-width: 480px;
+    
     margin: auto;
     background-repeat: no-repeat;
   }
@@ -209,8 +145,8 @@
     padding: 118px 0px 118px 0px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../images/Header\ 768.jpg);
-    max-width: 100%;
-    height: auto;
+    max-width: 768px;
+  
     margin: auto;
     background-repeat: no-repeat;
   }
@@ -231,13 +167,40 @@
     }
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .decision {
     padding: 200px 0px 200px 0px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../../images/Header\ 1600.jpg);
-    max-width: 100%;
-    height: auto;
+    max-width: 1600px;
+   
+    margin: auto;
+    background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box {
+      background-image: url(../../images/Header\ 3200\ @2x.jpg);
+    }
+  }
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 2dppx) {
+    .box {
+      background-image: url(../../images/Header\ 4800\ @3x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .decision {
+    padding: 200px 0px 200px 0px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../../images/Header\ 1600.jpg);
+    max-width: 1600px;
+    
     margin: auto;
     background-repeat: no-repeat;
   }

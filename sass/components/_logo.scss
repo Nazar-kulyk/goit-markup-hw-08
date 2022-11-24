@@ -32,3 +32,10 @@
     
  }
 }
+@media screen and (max-width: 1199px) {
+  .logo--ft {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+}
