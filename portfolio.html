@@ -27,11 +27,11 @@
             <li class="header__li">
               <a class="link" href="index.html">Студія</a>
             </li>
-            
+
             <li class="header__li">
               <a class="link link--current header__link" href="portfolio.html">Портфолі</a>
             </li>
-            
+
             <li class="header__li">
               <a class="link" href="#">Контакти</a>
             </li>
@@ -57,8 +57,90 @@
             >
           </li>
         </ul>
+
+        <button
+          class="mobail"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobail__menu--open"
+          data-menu-button
+        >
+          <svg width="40" height="40" class="mobail-menu__svg" aria-label="мобільне меню">
+            <use class="mobail__icon-menu" href="./images/icons.svg.svg#icon-menu_40px"></use>
+            <use class="mobail__close" . href="./images/icons.svg.svg#icon-close_40px"></use>
+          </svg>
+        </button>
       </div>
     </header>
+
+    <div class="mobail__menu--open" id="mobail__menu--open" data-menu>
+      <nav class="header__navigation--mobail">
+        <ul class="header__ul--mobail">
+          <li class="header__li">
+            <a class="link--mobail header__link" href="index.html">Студія</a>
+          </li>
+
+          <li class="header__li">
+            <a class="link--mobail link--mobail--current" href="portfolio.html">Портфолі</a>
+          </li>
+
+          <li class="header__li">
+            <a class="link--mobail" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+
+      <ul class="contact--mobail">
+        <li class="contact__li--mobail">
+          <a class="contact__link--mobail" href="tel:+380961111111"> +38 096 111 11 11</a>
+        </li>
+
+        <li class="contact__li--mobail">
+          <a class="contact__link__mobail--mail" href="mailto:info@devstudio.com">
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="social__mobail--menu">
+        <li class="social__mobail--li">
+          <a
+            class="social__mobail--link"
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li class="social__mobail--li">
+          <a
+            class="social__mobail--link"
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Twitter</a
+          >
+        </li>
+        <li class="social__mobail--li">
+          <a
+            class="social__mobail--link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >Facebook</a
+          >
+        </li>
+        <li class="social__mobail--li">
+          <a
+            class="social__mobail--link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
 
     <main>
       <section class="main">
@@ -86,10 +168,14 @@
                   </div>
 
                   <img
-                    src="./images/img_portfolio/opt/img1.jpg"
+                    srcset="
+                  ./images/products1 450.jpg, 1x
+                  ./images/products1 900 @2.jpg, 2x
+                  ./images/products1 1350 @3.jpg 3x
+                  "
+                    src="./images/products1 450.jpg"
                     alt="ноутбук"
-                    width="370"
-                    height="294"
+                    
                   />
                 </div>
                 <div class="products__card">
@@ -112,10 +198,14 @@
                     </div>
                   </div>
                   <img
-                    src="./images/img_portfolio/opt/img2.jpg"
-                    alt="баскетбол"
-                    width="370"
-                    height="294"
+                    srcset="
+                  ./images/products2 450.jpg, 1x
+                  ./images/products2 900 @2.jpg, 2x
+                  ./images/products2 1350 @3.jpg 3x
+                  "
+                    src="./images/products2 450.jpg"
+                    alt="ноутбук"
+                    
                   />
                 </div>
                 <div class="products__card">
@@ -140,10 +230,14 @@
                     </div>
                   </div>
                   <img
-                    src="./images/img_portfolio/opt/img3.jpg"
-                    alt="Ресторан"
-                    width="370"
-                    height="294"
+                    srcset="
+                  ./images/products3 450.jpg, 1x
+                  ./images/products3 900 @2.jpg, 2x
+                  ./images/products3 1350 @3.jpg 3x
+                  "
+                    src="./images/products3 450.jpg"
+                    alt="ноутбук"
+                    
                   />
                 </div>
                 <div class="products__card">
@@ -166,10 +260,14 @@
                     </div>
                   </div>
                   <img
-                    src="./images/img_portfolio/opt/img4.jpg"
-                    alt="навушники"
-                    width="370"
-                    height="294"
+                    srcset="
+                  ./images/products4 450.jpg, 1x
+                  ./images/products4 900 @2.jpg, 2x
+                  ./images/products4 1350 @3.jpg 3x
+                  "
+                    src="./images/products4 450.jpg"
+                    alt="ноутбук"
+                    
                   />
                 </div>
                 <div class="products__card">
@@ -192,10 +290,14 @@
                     </div>
                   </div>
                   <img
-                    src="./images/img_portfolio/opt/img5.jpg"
-                    alt="картонні коробки"
-                    width="370"
-                    height="294"
+                    srcset="
+                  ./images/products5 450.jpg, 1x
+                  ./images/products5 900 @2.jpg, 2x
+                  ./images/products5 1350 @3.jpg 3x
+                  "
+                    src="./images/products5 450.jpg"
+                    alt="ноутбук"
+                    
                   />
                 </div>
                 <div class="products__card">
@@ -218,10 +320,14 @@
                     </div>
                   </div>
                   <img
-                    src="./images/img_portfolio/opt/img6.jpg"
-                    alt="настільний компютер"
-                    width="370"
-                    height="294"
+                    srcset="
+                  ./images/products6 450.jpg, 1x
+                  ./images/products6 900 @2.jpg, 2x
+                  ./images/products6 1350 @3.jpg 3x
+                  "
+                    src="./images/products6 450.jpg"
+                    alt="ноутбук"
+                    
                   />
                 </div>
                 <div class="products__card">
@@ -244,10 +350,14 @@
                     </div>
                   </div>
                   <img
-                    src="./images/img_portfolio/opt/img7.jpg"
-                    alt="книга"
-                    width="370"
-                    height="294"
+                    srcset="
+                  ./images/products7 450.jpg, 1x
+                  ./images/products7 900 @2.jpg, 2x
+                  ./images/products7 1350 @3.jpg 3x
+                  "
+                    src="./images/products1 450.jpg"
+                    alt="ноутбук"
+                    
                   />
                 </div>
                 <div class="products__card">
@@ -270,10 +380,14 @@
                     </div>
                   </div>
                   <img
-                    src="./images/img_portfolio/opt/img8.jpg"
-                    alt="етикетка"
-                    width="370"
-                    height="294"
+                    srcset="
+                  ./images/products8 450.jpg, 1x
+                  ./images/products8 900 @2.jpg, 2x
+                  ./images/products8 1350 @3.jpg 3x
+                  "
+                    src="./images/products8 450.jpg"
+                    alt="ноутбук"
+                    
                   />
                 </div>
                 <div class="products__card">
@@ -295,7 +409,16 @@
                       </p>
                     </div>
                   </div>
-                  <img src="./images/img_portfolio/opt/img9.jpg" alt="" width="370" height="294" />
+                  <img
+                    srcset="
+                  ./images/products9 450.jpg, 1x
+                  ./images/products9 900 @2.jpg, 2x
+                  ./images/products9 1350 @3.jpg 3x
+                  "
+                    src="./images/products9 450.jpg"
+                    alt="ноутбук"
+                    
+                  />
                 </div>
                 <div class="products__card">
                   <h3 class="products__title"><span lang="en">Growing Business</span></h3>
@@ -309,85 +432,99 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__div">
-        <div>
-          <a lang="en" class="logo logo--ft" href="index.html"
-            >Web<span class="logo__st--color">Studio</span></a
-          >
+      <div class="footer__div container">
+        <div class="tablet">
+          <div class="tablet__div">
+            <a lang="en" class="logo logo--ft logo__ft--mobail" href="index.html"
+              >Web<span class="logo__st--color">Studio</span></a
+            >
 
-          <address class="footer__address">
-            <ul class="footer__ul">
-              <li class="footer__li">
+            <address class="footer__address">
+              <ul class="footer__ul">
+                <li class="footer__li">
+                  <a
+                    class="footer__kyiv footer__address--mobail"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+
+                <li class="footer__li footer__address--mobail">
+                  <a class="footer__li footer__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+
+                <li class="footer__li footer__address--mobail">
+                  <a class="footer__li footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="join">
+            <p class="join__paragraph">приєднуйтесь</p>
+            <ul class="join__ul">
+              <li class="join__li">
                 <a
-                  class="footer__kyiv"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  class="join__link"
+                  href="https://instagram.com/"
                   target="_blank"
-                  rel="noopener noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a
+                  rel="noopener noreferrer nofollow"
                 >
+                  <svg class="join__svg">
+                    <use href="./images/icons.svg.svg#instagram-2"></use>
+                  </svg>
+                </a>
               </li>
 
-              <li class="footer__li">
-                <a class="footer__li footer__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li class="join__li">
+                <a
+                  class="join__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
                 >
+                  <svg class="join__svg">
+                    <use href="./images/icons.svg.svg#twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-
-              <li class="footer__li">
-                <a class="footer__li footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="join__li">
+                <a
+                  class="join__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="join__svg">
+                    <use href="./images/icons.svg.svg#facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__li">
+                <a
+                  class="join__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <svg class="join__svg">
+                    <use href="./images/icons.svg.svg#linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="join">
-          <p class="join__paragraph">приєднуйтесь</p>
-          <ul class="join__ul">
-            <li class="join__li">
-              <a class="join__link" href="https://instagram.com/" target="_blank" rel="noopener noreferrer nofollow">
-                <svg class="join__svg">
-                  <use href="./images/icons.svg.svg#instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="join__li">
-              <a class="join__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer nofollow">
-                <svg class="join__svg">
-                  <use href="./images/icons.svg.svg#twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__li">
-              <a class="join__link"
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <svg class="join__svg">
-                  <use href="./images/icons.svg.svg#facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join__li">
-              <a class="join__link"
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-              >
-                <svg class="join__svg">
-                  <use href="./images/icons.svg.svg#linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <div class="footer-form__div">
           <form class="footer-form__form" name="subscription-footer">
-            <div>
+            <div class="footer-form__div--mobail">
               <span class="footer-form__span">Підпишіться на розсилку</span>
-              <label>
+              <label class="footer-form-label--mobail">
                 <input class="footer-form__input" type="email" name="email" placeholder="E-mail" />
               </label>
               <button class="footer-form__button" type="submit">
@@ -403,5 +540,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
