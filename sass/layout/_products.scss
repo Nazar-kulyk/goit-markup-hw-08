@@ -81,3 +81,22 @@
   letter-spacing: 0.03em;
   color: $paragraph;
 }
+@media screen and (max-width: 767px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .products {
+    width: 768px;
+    margin: 0 auto;
+  }
+  .products__li {
+    width: 354px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
