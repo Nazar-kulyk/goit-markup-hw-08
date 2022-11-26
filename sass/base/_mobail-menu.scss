@@ -43,6 +43,7 @@
 
     position: absolute;
     width: 100%;
+
     padding: 48px 40px;
     top: 0;
     left: 0;
@@ -50,18 +51,21 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
     z-index: 111;
+
     &.is-open {
       display: block;
-    }
-    .header__navigation--mobail {
       display: flex;
       flex-direction: column;
-      
-    }
-    .header__ul--mobail {
-      margin-bottom: 302px;
+      margin-bottom: auto;
+      height: 100%;
     }
   }
+  .header__navigation--mobail {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+  }
+
   .link--mobail {
     position: relative;
     display: block;
@@ -97,7 +101,7 @@
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
-    font-size: 34px;
+    font-size: 7vw;
     line-height: calc(40 / 34);
     letter-spacing: 0.02em;
     color: $contact__link--mobail-color;
@@ -121,6 +125,7 @@
   }
   .contact__li--mobail {
     margin-bottom: 32px;
+
     &:last-child {
       margin: 0;
     }
@@ -152,6 +157,12 @@
   .social__mobail--menu {
     display: flex;
     list-style-type: none;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 437px) {
+      gap: 10px;
+    }
+
   }
   .social__mobail--li {
     margin-right: 10px;
@@ -159,6 +170,7 @@
 
     &:last-child {
       margin: 0;
+      border: none;
     }
   }
   .social__mobail--link {

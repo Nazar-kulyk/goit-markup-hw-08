@@ -78,11 +78,12 @@
   }
   .tablet {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 60px;
   }
   .tablet__div {
     max-width: 232px;
+    margin-right: 165px;
   }
 
   .footer__address {
