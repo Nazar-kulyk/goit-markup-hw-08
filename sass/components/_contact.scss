@@ -112,7 +112,11 @@
 
 
    }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact__li {
+        margin-bottom: 10px;
+    }
+}
 @media screen and (max-width: 767px) {
   .contact {
     display: none;

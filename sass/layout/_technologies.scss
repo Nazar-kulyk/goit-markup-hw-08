@@ -40,15 +40,19 @@
 
   .technologies__li {
     margin: 0 auto;
-    margin-bottom: 30px;
-    max-width: 450px;
+     max-width: 450px;
+
+     @media screen and ( max-width: 767px) {
+      margin-bottom: 30px;
+     }
   }
+
 }
 .technologies__title {
   text-align: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .technologies {
     padding-top: 60px;
     padding-bottom: 60px;
