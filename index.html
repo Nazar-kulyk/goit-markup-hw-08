@@ -213,7 +213,7 @@
             <li class="whatwedo__li">
               <div class="whatwedo__div">
                 <img
-                   srcset="
+                  srcset="
                     images\index\thatwedo\that1_thatwedo_370.jpg     1x,
                     images\index\thatwedo\that1_thatwedo_740@2x.jpg  2x,
                     images\index\thatwedo\that1_thatwedo_1110@3x.jpg 3x
@@ -232,7 +232,7 @@
             <li class="whatwedo__li">
               <div class="whatwedo__div">
                 <img
-                 srcset="
+                  srcset="
                     images\index\thatwedo\that2_thatwedo_370.jpg     1x,
                     images\index\thatwedo\that2_thatwedo_740@2x.jpg  2x,
                     images\index\thatwedo\that2_thatwedo_1110@3x.jpg 3x
@@ -255,7 +255,7 @@
             <li class="whatwedo__li">
               <div class="whatwedo__div">
                 <img
-                   srcset="
+                  srcset="
                     images\index\thatwedo\that3_thatwedo_370.jpg     1x,
                     images\index\thatwedo\that3_thatwedo_740@2x.jpg  2x,
                     images\index\thatwedo\that3_thatwedo_1110@3x.jpg 3x
@@ -284,15 +284,39 @@
           <ul class="our-team__ul">
             <li class="our-team__li">
               <div class="our-team__div">
-                <img
-                  srcset="
-                    images\index\our-team\mobail\out-team1_mobail_450.jpg     1x,
-                    images\index\our-team\mobail\out-team1_mobail_900@2x.jpg  2x,
-                    images\index\our-team\mobail\out-team1_mobail_1350@3x.jpg 3x
-                  "
-                  src="images\index\our-team\mobail\out-team1_mobail_450.jpg"
-                  alt="man with glasses"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      images\index\our-team\desk\out-team1_desk_270.jpg    1x,
+                      images\index\our-team\desk\out-team1_desk_540@2x.jpg 2x,
+                      images\index\our-team\desk\out-team1_desk_810@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      images\index\our-team\tablet\imgout-team1_tablet_354.jpg     1x,
+                      images\index\our-team\tablet\imgout-team1_tablet_708@2x.jpg  2x,
+                      images\index\our-team\tablet\imgout-team1_tablet_1062@3x.jpg 3x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 766px)"
+                    srcset="
+                      images\index\our-team\mobail\out-team1_mobail_450.jpg     1x,
+                      images\index\our-team\mobail\out-team1_mobail_900@2x.jpg  2x,
+                      images\index\our-team\mobail\out-team1_mobail_1350@3x.jpg 3x
+                    "
+                  />
+
+                  <img
+                    src="images\index\our-team\desk\out-team1_desk_270.jpg"
+                    alt="man with glasses"
+                  />
+                </picture>
+
                 <h3 class="our-team__title--card">Ігор Дем'яненко</h3>
                 <p class="our-team__paragraph">Product Designer</p>
 
@@ -352,15 +376,39 @@
 
             <li class="our-team__li">
               <div class="our-team__div">
-                <img
-                  srcset="
-                    images\index\our-team\mobail\out-team2_mobail_450.jpg     1x,
-                    images\index\our-team\mobail\out-team2_mobail_900@2x.jpg  2x,
-                    images\index\our-team\mobail\out-team2_mobail_1350@3x.jpg 3x
-                  "
-                  src="images\index\our-team\mobail\out-team2_mobail_450.jpg"
-                  alt="woman with glasses"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      images\index\our-team\desk\out-team2_desk_270.jpg    1x,
+                      images\index\our-team\desk\out-team2_desk_540@2x.jpg 2x,
+                      images\index\our-team\desk\out-team2_desk_810@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      images\index\our-team\tablet\out-team2_tablet_354.jpg     1x,
+                      images\index\our-team\tablet\out-team2_tablet_708@2x.jpg  2x,
+                      images\index\our-team\tablet\out-team2_tablet_1062@3x.jpg 3x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 766px)"
+                    srcset="
+                      images\index\our-team\mobail\out-team2_mobail_450.jpg     1x,
+                      images\index\our-team\mobail\out-team2_mobail_900@2x.jpg  2x,
+                      images\index\our-team\mobail\out-team2_mobail_1350@3x.jpg 3x
+                    "
+                  />
+
+                  <img
+                    src="images\index\our-team\mobail\out-team2_mobail_450.jpg"
+                    alt="woman with glasses"
+                  />
+                </picture>
+
                 <h3 class="our-team__title--card">Ольга Рєпіна</h3>
                 <p class="our-team__paragraph">Frontend Developer</p>
 
@@ -420,15 +468,35 @@
 
             <li class="our-team__li">
               <div class="our-team__div">
-                <img
-                  srcset="
-                    images\index\our-team\mobail\out-team3_mobail_450.jpg     1x,
-                    images\index\our-team\mobail\out-team3_mobail_900@2x.jpg  2x,
-                    images\index\our-team\mobail\out-team3_mobail_1350@3x.jpg 3x
-                  "
-                  src="images\index\our-team\mobail\out-team3_mobail_450.jpg"
-                  alt="men"
-                />
+                <picture>
+                <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      images\index\our-team\desk\out-team3_desk_270.jpg    1x,
+                      images\index\our-team\desk\out-team3_desk_540@2x.jpg 2x,
+                      images\index\our-team\desk\out-team3_desk_810@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      images\index\our-team\tablet\out-team3_tablet_354.jpg     1x,
+                      images\index\our-team\tablet\out-team3_tablet_708@2x.jpg  2x,
+                      images\index\our-team\tablet\out-team3_tablet_1062@3x.jpg 3x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 766px)"
+                    srcset="
+                      images\index\our-team\mobail\out-team3_mobail_450.jpg     1x,
+                      images\index\our-team\mobail\out-team3_mobail_900@2x.jpg  2x,
+                      images\index\our-team\mobail\out-team3_mobail_1350@3x.jpg 3x
+                    "
+                  />
+
+                  <img src="images\index\our-team\mobail\out-team3_mobail_450.jpg" alt="men" />
+                </picture>
                 <h3 class="our-team__title--card">Микола Тарасов</h3>
                 <p class="our-team__paragraph">Marketing</p>
 
@@ -488,15 +556,38 @@
 
             <li class="our-team__li">
               <div class="our-team__div">
-                <img
-                  srcset="
-                    images\index\our-team\mobail\out-team4_mobail_450.jpg     1x,
-                    images\index\our-team\mobail\out-team4_mobail_900@2x.jpg  2x,
-                    images\index\our-team\mobail\out-team4_mobail_1350@3x.jpg 3x
-                  "
-                  src="images\index\our-team\mobail\out-team4_mobail_450.jpg"
-                  alt="man with glasses in black t-shirt"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      images\index\our-team\desk\out-team4_desk_270.jpg    1x,
+                      images\index\our-team\desk\out-team4_desk_540@2x.jpg 2x,
+                      images\index\our-team\desk\out-team4_desk_810@3x.jpg 3x
+                    "
+                  />
+                  <source
+                    media="(min-width: 767px)"
+                    srcset="
+                      images\index\our-team\tablet\out-team4_tablet_354.jpg    1x,
+                      images\index\our-team\tablet\out-team4_tablet_708@2x.jpg  2x,
+                      images\index\our-team\tablet\out-team4_tablet_1062@3x.jpg 3x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 766px)"
+                    srcset="
+                      images\index\our-team\mobail\out-team4_mobail_450.jpg     1x,
+                      images\index\our-team\mobail\out-team4_mobail_900@2x.jpg  2x,
+                      images\index\our-team\mobail\out-team4_mobail_1350@3x.jpg 3x
+                    "
+                  />
+                  
+                  <img
+                    src="images\index\our-team\mobail\out-team4_mobail_450.jpg"
+                    alt="man with glasses in black t-shirt"
+                  />
+                </picture>
                 <h3 class="our-team__title--card">Михайло Єрмаков</h3>
                 <p class="our-team__paragraph">UI Designer</p>
 
